@@ -105,10 +105,10 @@ RCT_EXPORT_METHOD(launchImageLibrary:(NSDictionary *)options callback:(RCTRespon
 
 - (void) showPickerViewController:(UIViewController *)picker
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        UIViewController *root = RCTPresentedViewController();
-        [root presentViewController:picker animated:YES completion:nil];
-    });
+    // dispatch_async(dispatch_get_main_queue(), ^{
+    //     UIViewController *root = RCTPresentedViewController();
+    //     [root presentViewController:picker animated:YES completion:nil];
+    // });
 }
 
 #pragma mark - Helpers
